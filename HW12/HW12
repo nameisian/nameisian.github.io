@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>表單</title>
+</head>
+<form>
+    姓名一定要填喔：<input type="text" name="UserName" required><br>
+    Email：<input type="text" name="UserMail" value="username@gmail"><br>
+    只能輸入英文大小寫喔：<input type="text" name="en" pattern="[A-Za-z]{3}" title="Three letter en" required>
+<input type="submit" value="提交">
+<input type="reset" value="重新輸入">  
+<form method="post" action="mailto:hank80336@gmail.com">
+</form>  
+</form>
