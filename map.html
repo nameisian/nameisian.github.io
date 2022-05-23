@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>快速嵌入</title>
+  <style>
+	body {display:inline;}
+	iframe {padding:10px}
+  </style>
+</head>
+<body>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39149.72413644123!2d121.30453958323513!3d24.179608625270234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a144d0d327c2c23!2z5aSp5beS5rGg!5e0!3m2!1szh-TW!2stw!4v1653275319173!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div id="map"></div>
+<script type="text/javascript">
+   function initMap() {
+       const location = {lat: 24.175871282774843, lng: 121.31238679944039}
+  const map = new google.maps.Map( document.getElementById("map"), {
+          center: location,
+          zoom: 15
+      }
+  );
+    }
+window.initMap = initMap;
+</script>
+<script async defer src=“https://maps.googleapis.com/maps/api/js?key=AIzaSyDLM8UnSHpFjzusSDJRugQHJqZVhGJoCFs&callback=initMap"></script><script async defer src=“https://maps.googleapis.com/maps/api/js?key=AIzaSyDLM8UnSHpFjzusSDJRugQHJqZVhGJoCFs&callback=initMap"></script>
+
+</body>
+</html>
